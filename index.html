@@ -1,209 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nature Platter</title>
-    <!-- Font CDN -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
-      rel="stylesheet"
-    />
-    <!-- DaisyUi -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      .sora {
-        font-family: "Sora", sans-serif;
-      }
-    </style>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-              "nature-primary": "#179800",
-              "nature-primary-bg": "#EFEBE3",
-            },
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nature Platter</title>
+  <!-- Font CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+  <!-- DaisyUi -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .sora {
+      font-family: "Sora", sans-serif;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+            "nature-primary": "#179800",
+            "nature-primary-bg": "#EFEBE3",
           },
         },
-      };
-    </script>
-  </head>
-  <body class="sora">
-    <!-- Header Section Design -->
-    <header class="mx-auto mt-6">
-      <!-- navbar -->
-      <nav class="fixed top-0 left-0 w-full z-50 bg-white shadow">
-        <div class="navbar navbar bg-white md:container mx-auto">
-          <div class="flex-1">
-            <a class="">
-              <img
-                src="images/logo-header.png"
-                alt=""
-                class="hidden lg:block"
-              />
-              <img src="images/logo-png.png" alt="" class="block lg:hidden" />
-            </a>
-          </div>
-          <div class="navbar-center hidden lg:flex lg:gap-32">
-            <ul class="menu menu-horizontal px-1">
+      },
+    };
+  </script>
+</head>
+
+<body class="sora">
+  <!-- Header Section Design -->
+  <header class="mx-auto mt-6">
+    <!-- navbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-white shadow">
+      <div class="navbar navbar bg-white md:container mx-auto">
+        <div class="flex-1">
+          <a class="">
+            <img src="images/logo-header.png" alt="" class="hidden lg:block" />
+            <img src="images/logo-png.png" alt="" class="block lg:hidden" />
+          </a>
+        </div>
+        <div class="navbar-center hidden lg:flex lg:gap-32">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Product</a></li>
+            <li><a>Services</a></li>
+            <li><a>Contact us</a></li>
+          </ul>
+          <ul class="hidden lg:flex items-center lg:gap-6">
+            <li>
+              <a>
+                <img src="images/1-icon.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a>
+                <img src="images/2-icon.png" alt="" />
+              </a>
+            </li>
+            <!-- btn -->
+            <li>
+              <a>
+                <button class="btn btn-outline border-nature-primary text-nature-primary">
+                  Login
+                </button>
+              </a>
+            </li>
+            <li>
+              <a>
+                <button class="btn bg-nature-primary text-white">
+                  Register
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Drop down -->
+        <div class="">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-4 -ml-12 p-2 shadow">
               <li><a>Product</a></li>
               <li><a>Services</a></li>
               <li><a>Contact us</a></li>
             </ul>
-            <ul class="hidden lg:flex items-center lg:gap-6">
-              <li>
-                <a>
-                  <img src="images/1-icon.png" alt="" />
-                </a>
-              </li>
-              <li>
-                <a>
-                  <img src="images/2-icon.png" alt="" />
-                </a>
-              </li>
-              <!-- btn -->
-              <li>
-                <a>
-                  <button
-                    class="btn btn-outline border-nature-primary text-nature-primary"
-                  >
-                    Login
-                  </button>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <button class="btn bg-nature-primary text-white">
-                    Register
-                  </button>
-                </a>
-              </li>
-            </ul>
           </div>
-          <!-- Drop down -->
+        </div>
+      </div>
+    </nav>
+    <!-- Hero banner -->
+    <section class="mb-5">
+      <div class="hero bg-gradient-to-t from-nature-primary-bg to-white">
+        <div class="text-center">
           <div class="">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
+            <h1 class="pt-24 font-semibold leading-normal text-5xl">
+              Freshness
+              <span class="text-nature-primary">You Can <br class="hidden lg:block" />Count</span>
+              On, Prices You’ll Love!
+            </h1>
+            <p class="py-6 text-gray-600">
+              Shop your daily essentials at unbeatable prices. From fresh
+              produce to pantry <br class="hidden lg:block" />
+              staples, we’ve got you covered every day!
+            </p>
+            <img src="images/hero-vegetables.png" alt="" class="mx-auto w-9/12" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <!-- Main -->
+  <main>
+    <!-- Services -->
+    <section class="md:container mx-auto my-10">
+      <h1 class="text-nature-primary font-semibold text-4xl ml-4 mt-28 mb-10">Services</h1>
+      <div class="gap-8 grid grid-rows-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center justify-center md:gap-28">
+        <!-- card-1 -->
+        <div class="card bg-nature-primary-bg border w-96 shadow-xl">
+          <figure>
+            <div class="avatar pt-10">
+              <div class="w-24 rounded-full">
+                <img src="images/service.png" class="p-4 bg-white" />
               </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-4 -ml-12 p-2 shadow"
-              >
-                <li><a>Product</a></li>
-                <li><a>Services</a></li>
-                <li><a>Contact us</a></li>
-              </ul>
+            </div>
+          </figure>
+          <div class="card-body">
+            <h2 class="text-center font-semibold text-xl">24/7 Services</h2>
+            <p class="text-gray-500 text-center my-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            </p>
+          </div>
+        </div>
+        <!-- card-2 -->
+        <div class="card bg-nature-primary-bg border w-96 shadow-xl">
+          <figure>
+            <div class="avatar pt-10">
+              <div class="w-24 rounded-full">
+                <img src="images/delivery.png" class="p-4 bg-white" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body">
+            <h2 class="text-center font-semibold text-xl">24/7 Services</h2>
+            <p class="text-gray-500 text-center my-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            </p>
+          </div>
+        </div>
+        <!-- card-3 -->
+        <div class="card bg-nature-primary-bg border w-96 shadow-xl">
+          <figure>
+            <div class="avatar pt-10">
+              <div class="w-24 rounded-full">
+                <img src="images/healthy.png" class="p-4 bg-white" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body">
+            <h2 class="text-center font-semibold text-xl">24/7 Services</h2>
+            <p class="text-gray-500 text-center my-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            </p>
+          </div>
+        </div>
+    </section>
+    <!-- Popular Products -->
+    <section>
+      <div class="md:container mx-auto my-10">
+        <h1 class="text-nature-primary font-semibold text-4xl ml-4 mt-28 mb-10">Services</h1>
+        <!-- card-1 -->
+        <div class="card bg-base-100 w-96 shadow-xl">
+          <div>
+            <h2 class="card-title">30% off</h2>
+            <p>Discover a world of treats, toys, and essentials handpicked for</p>
+            <button class="btn btn-sm">Buy Now</button>
+            <div class="card-actions justify-end">
+              <img src="images/vegetable-offer.png" alt="">
             </div>
           </div>
         </div>
-      </nav>
-      <!-- Hero banner -->
-      <section class="mb-5">
-        <div class="hero bg-gradient-to-t from-nature-primary-bg to-white">
-          <div class="text-center">
-            <div class="">
-              <h1 class="pt-24 font-semibold leading-normal text-5xl">
-                Freshness
-                <span class="text-nature-primary"
-                  >You Can <br class="hidden lg:block" />Count</span
-                >
-                On, Prices You’ll Love!
-              </h1>
-              <p class="py-6 text-gray-600">
-                Shop your daily essentials at unbeatable prices. From fresh
-                produce to pantry <br class="hidden lg:block" />
-                staples, we’ve got you covered every day!
-              </p>
-              <img
-                src="images/hero-vegetables.png"
-                alt=""
-                class="mx-auto w-9/12"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-    </header>
-    <!-- Main -->
-    <main>
-      <!-- Services -->
-      <section class="md:container mx-auto my-10">
-       <h1 class="text-nature-primary font-semibold text-4xl ml-4 mt-28 mb-10">Services</h1>
-        <div class="gap-8 grid grid-rows-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center justify-center md:gap-28">
-          <!-- card-1 -->
-          <div class="card bg-nature-primary-bg border w-96 shadow-xl">
-            <figure>
-              <div class="avatar pt-10">
-                <div class="w-24 rounded-full">
-                  <img src="images/service.png" class="p-4 bg-white" />
-                </div>
-              </div>
-            </figure>
-            <div class="card-body">
-              <h2 class="text-center font-semibold text-xl">24/7 Services</h2>
-              <p class="text-gray-500 text-center my-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-              </p>
-              </div>
-           </div>
-          <!-- card-2 -->
-          <div class="card bg-nature-primary-bg border w-96 shadow-xl">
-            <figure>
-              <div class="avatar pt-10">
-                <div class="w-24 rounded-full">
-                  <img src="images/delivery.png" class="p-4 bg-white" />
-                </div>
-              </div>
-            </figure>
-            <div class="card-body">
-              <h2 class="text-center font-semibold text-xl">24/7 Services</h2>
-              <p class="text-gray-500 text-center my-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-              </p>
-              </div>
-           </div>
-          <!-- card-3 -->
-          <div class="card bg-nature-primary-bg border w-96 shadow-xl">
-            <figure>
-              <div class="avatar pt-10">
-                <div class="w-24 rounded-full">
-                  <img src="images/healthy.png" class="p-4 bg-white" />
-                </div>
-              </div>
-            </figure>
-            <div class="card-body">
-              <h2 class="text-center font-semibold text-xl">24/7 Services</h2>
-              <p class="text-gray-500 text-center my-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-              </p>
-              </div>
-           </div>
-      </section>
-      <!-- Popular Products -->
-       <section class="md:container mx-auto my-10"></section>
-    </main>
-  </body>
+
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
